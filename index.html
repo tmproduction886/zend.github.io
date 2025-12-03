@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zend – Quit Gaming & Rebuild Your Life</title>
+    <meta
+      name="description"
+      content="Zend helps you quit compulsive gaming using Screen Time–based blocking, focus schedules, and replacement habits."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="logo">
+          <img
+            src="./transparent background icon.png"
+            alt="Zend logo"
+            class="logo-image"
+          />
+          <span class="logo-text">Zend<span>.</span>now</span>
+        </div>
+        <nav class="nav">
+          <a href="#how-it-works">How it works</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-layout">
+          <div class="hero-text">
+            <h1>Quit Gaming. Rebuild Your Life.</h1>
+            <p class="subtitle">
+              Zend uses Apple Screen Time to block the apps that pull you back in,
+              while guiding you to build new habits, track your streak, and stay accountable.
+            </p>
+            <div class="hero-cta">
+              <a class="btn-primary" href="#waitlist">Join the early access list</a>
+              <p class="hero-note">iOS app in private beta. Screen Time / Family Controls required.</p>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card-header">Zend Focus Block</div>
+            <div class="card-body">
+              <p class="metric-label">Next lock:</p>
+              <p class="metric-value">Tonight • 7:00 PM – 11:00 PM</p>
+              <p class="metric-note">
+                Games and distracting apps are blocked during this window
+                so you can focus on what actually matters.
+              </p>
+              <ul class="hero-list">
+                <li>Custom focus schedules (work, study, sleep)</li>
+                <li>Per‑app blocking using Apple Screen Time</li>
+                <li>Clean streak tracking & relapse logging</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section">
+        <div class="container">
+          <h2>How Zend works</h2>
+          <div class="grid-3">
+            <div class="card">
+              <h3>1. Choose what to block</h3>
+              <p>
+                Using Apple’s Family Controls APIs, you select games and distracting apps that
+                you want to limit. Zend never installs a VPN and does not sell your data.
+              </p>
+            </div>
+            <div class="card">
+              <h3>2. Schedule focus blocks</h3>
+              <p>
+                Set recurring “gaming lock” windows for work, school, and sleep.
+                During an active block, Screen Time prevents you from opening the selected apps.
+              </p>
+            </div>
+            <div class="card">
+              <h3>3. Build new habits</h3>
+              <p>
+                Inside the app, you’ll track your clean streak, log cravings or relapses,
+                and complete small daily habits that rebuild focus, health, and relationships.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacy" class="section section-dark">
+        <div class="container">
+          <h2>Privacy & safety</h2>
+          <div class="grid-2">
+            <div>
+              <p>
+                Zend uses Apple’s Screen Time / Family Controls framework to enforce app limitations.
+                This means blocking happens at the system level, controlled by iOS,
+                rather than via insecure workarounds.
+              </p>
+              <p>
+                We do <strong>not</strong> sell personal data. Any analytics we collect are only
+                used to improve your experience and are stored securely.
+              </p>
+            </div>
+            <div>
+              <ul class="bullet-list">
+                <li>No VPN or configuration profiles</li>
+                <li>Uses Apple’s official Screen Time APIs</li>
+                <li>Parents can configure blocks on a child’s device where permitted</li>
+                <li>You can revoke access at any time from iOS settings</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="waitlist" class="section">
+        <div class="container">
+          <h2>Early access</h2>
+          <p>
+            Zend is currently in a private beta on iOS. If you’d like to be notified when
+            it’s available on the App Store, leave your email below and we’ll reach out.
+          </p>
+          <form class="waitlist-form">
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              aria-label="Email address"
+              required
+            />
+            <button type="submit" class="btn-primary">Request invite</button>
+          </form>
+          <p class="form-note">
+            This form is a placeholder for now – you can wire it to your preferred email / CRM later.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-dark">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            For questions about Zend, Screen Time, or data handling, email
+            <a href="mailto:support@zend.now">support@zend.now</a>.
+          </p>
+          <p class="small">
+            Zend is an independent project focused on helping people reduce compulsive gaming
+            and reclaim time for deep work, health, and real‑life relationships.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>© <span id="year"></span> Zend</span>
+        <span class="footer-domain">zend.now</span>
+      </div>
+    </footer>
+
+    <script>
+      // Keep copyright year current.
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
+
