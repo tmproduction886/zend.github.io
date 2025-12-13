@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     url: 'https://zend.now',
     siteName: 'Zend',
     type: 'website',
+    images: [
+      {
+        url: '/icon.png',
+        width: 1024,
+        height: 1024,
+        alt: 'Zend Logo',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -47,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script
           type="application/ld+json"

@@ -8,9 +8,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-focus-green to-vibrant-teal rounded-lg flex items-center justify-center">
-                <span className="text-void-black font-bold text-xl">Z</span>
-              </div>
+              <img 
+                src="/icon.png" 
+                alt="Zend Logo" 
+                className="w-10 h-10 rounded-lg"
+              />
               <span className="text-xl font-bold font-poppins">Zend</span>
             </div>
             <p className="text-text-tertiary text-sm max-w-md">
