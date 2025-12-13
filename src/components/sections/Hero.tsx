@@ -93,6 +93,7 @@ export default function Hero() {
                   className="object-contain"
                   priority
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
                 />
               </div>
             </div>

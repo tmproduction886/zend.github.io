@@ -97,14 +97,15 @@ export default function Features() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-              className="relative aspect-[9/16] rounded-xl overflow-hidden border border-white/10 hover:border-focus-green/50 transition-all duration-300 group"
+              className="relative aspect-[9/16] rounded-xl overflow-hidden border border-white/10 hover:border-focus-green/50 transition-all duration-300 group bg-card-bg/20"
             >
               <Image
                 src={feature.screenshot}
                 alt={`${feature.title} - Zend App Screenshot`}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                className="object-contain group-hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 768px) 50vw, 33vw"
+                loading="lazy"
               />
             </motion.div>
           ))}
