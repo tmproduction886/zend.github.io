@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -74,7 +75,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* App Preview Image Placeholder */}
+        {/* App Preview Image */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -83,9 +84,16 @@ export default function Hero() {
         >
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-focus-green/20 to-vibrant-teal/20 blur-3xl rounded-3xl" />
-            <div className="relative bg-card-bg/50 backdrop-blur-sm border border-white/10 rounded-3xl p-8">
-              <div className="aspect-[9/16] bg-gradient-to-br from-digital-night to-void-black rounded-2xl flex items-center justify-center">
-                <p className="text-text-tertiary">App Screenshot Placeholder</p>
+            <div className="relative bg-card-bg/50 backdrop-blur-sm border border-white/10 rounded-3xl p-4 md:p-8">
+              <div className="relative aspect-[9/16] rounded-2xl overflow-hidden">
+                <Image
+                  src="/dashboard.png"
+                  alt="Zend App Dashboard"
+                  fill
+                  className="object-contain"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>

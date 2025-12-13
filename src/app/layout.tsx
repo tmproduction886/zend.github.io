@@ -20,14 +20,28 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Zend - Quit Gaming & Rebuild Your Life | Gamified Recovery App',
   description: 'Zend helps you quit gaming addiction using gamification, Screen Time blocking, and community support. Start your 7-day free trial today.',
-  keywords: 'quit gaming, gaming addiction, screen time blocker, recovery app, gaming addiction help',
+  keywords: 'quit gaming, gaming addiction, screen time blocker, recovery app, gaming addiction help, stop gaming, gaming detox, digital wellness, screen time management',
+  authors: [{ name: 'Zend' }],
+  creator: 'Zend',
+  publisher: 'Zend',
+  metadataBase: new URL('https://zend.now'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Zend - Quit Gaming & Rebuild Your Life',
-    description: 'The gamified recovery app that helps you quit gaming addiction.',
+    description: 'The gamified recovery app that helps you quit gaming addiction using Apple Screen Time, XP tracking, and community support. Start your 7-day free trial today.',
     url: 'https://zend.now',
     siteName: 'Zend',
     type: 'website',
+    locale: 'en_US',
     images: [
+      {
+        url: '/dashboard.png',
+        width: 1200,
+        height: 630,
+        alt: 'Zend App Dashboard - Gamified Recovery App',
+      },
       {
         url: '/icon.png',
         width: 1024,
@@ -39,11 +53,25 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Zend - Quit Gaming & Rebuild Your Life',
-    description: 'The gamified recovery app that helps you quit gaming addiction.',
+    description: 'The gamified recovery app that helps you quit gaming addiction. Start your 7-day free trial today.',
+    images: ['/dashboard.png'],
+    creator: '@zend',
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // Add your verification codes here when available
+    // google: 'your-google-verification-code',
+    // yandex: 'your-yandex-verification-code',
   },
 }
 
