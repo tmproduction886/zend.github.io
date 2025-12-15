@@ -5,7 +5,7 @@ export default function TermsPage() {
         <h1 className="text-4xl font-bold font-poppins mb-8">Terms of Service</h1>
         <div className="prose prose-invert max-w-none">
           <p className="text-text-secondary mb-4">
-            Last updated: December 13, 2024
+            Last updated: December 15, 2025
           </p>
           <p className="text-text-secondary mb-6">
             Please read these Terms of Service carefully before using Zend. By accessing or using Zend, you agree to be bound by these Terms of Service and all applicable laws and regulations.
@@ -30,10 +30,16 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold mt-8 mb-4">Subscription Terms</h2>
           
-          <h3 className="text-xl font-semibold mt-6 mb-3">Subscription Plans</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-3">Subscription Plans & Pricing</h3>
           <p className="text-text-secondary mb-4">
             Zend offers premium subscription services that provide access to advanced features, including unlimited focus schedules, advanced analytics, full meditation library, priority community access, and more.
           </p>
+          <ul className="text-text-secondary mb-4 list-disc list-inside space-y-2">
+            <li><strong>Monthly Plan:</strong> Renews every month. Price is shown in-app and charged to your Apple ID at confirmation.</li>
+            <li><strong>Annual Plan:</strong> Renews every year. Price is shown in-app and charged to your Apple ID at confirmation.</li>
+            <li>Any limited-time promotional price or free trial will convert to the standard subscription price shown in-app at the end of the promo/trial period unless you cancel at least 24 hours before renewal.</li>
+            <li>Local currency pricing and applicable taxes are displayed in-app by Apple at checkout.</li>
+          </ul>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Free Trial</h3>
           <p className="text-text-secondary mb-4">
@@ -45,19 +51,19 @@ export default function TermsPage() {
             Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current subscription period. You will be charged the subscription fee to your Apple ID account at confirmation of purchase. Your account will be charged for renewal within 24 hours prior to the end of the current period.
           </p>
 
-          <h3 className="text-xl font-semibold mt-6 mb-3">Cancellation</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-3">Cancellation & Management</h3>
           <p className="text-text-secondary mb-4">
-            You can cancel your subscription at any time. To cancel:
+            You can cancel or manage your subscription at any time via your Apple ID:
           </p>
           <ol className="text-text-secondary mb-4 list-decimal list-inside space-y-2">
             <li>Open the Settings app on your iPhone or iPad</li>
-            <li>Tap your name at the top</li>
+            <li>Tap your name (Apple ID)</li>
             <li>Tap Subscriptions</li>
             <li>Select Zend</li>
             <li>Tap Cancel Subscription</li>
           </ol>
           <p className="text-text-secondary mb-4">
-            If you cancel during the free trial, you will not be charged. If you cancel after the trial period, you will continue to have access to premium features until the end of your current billing period. No refunds will be provided for the unused portion of the current subscription period.
+            Cancelling at least 24 hours before the current period ends prevents auto-renewal. If you cancel during a free trial, you will not be charged. If you cancel after the trial or during a paid period, you keep access until the end of the current billing cycle. No refunds are provided for the unused portion of the current period unless required by law.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Price Changes</h3>
