@@ -24,6 +24,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'Zend' }],
   creator: 'Zend',
   publisher: 'Zend',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/favicon.png', type: 'image/png', sizes: '48x48' },
+    ],
+    shortcut: ['/favicon.ico', '/favicon.png'],
+    apple: [{ url: '/icon.png', sizes: '180x180', type: 'image/png' }],
+  },
   metadataBase: new URL('https://zend.now'),
   alternates: {
     canonical: '/',
@@ -83,7 +91,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script
           type="application/ld+json"
