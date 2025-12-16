@@ -29,7 +29,7 @@ export default function FinalCTA() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <a
-              href="https://apps.apple.com/app/zend"
+              href="https://apps.apple.com/us/app/zend-quit-gaming-now/id6756012283"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-gradient-to-r from-focus-green to-focus-green-light text-void-black px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-focus-green/50 transition-all duration-300 hover:scale-105"

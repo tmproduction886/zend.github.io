@@ -39,7 +39,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://apps.apple.com/app/zend"
+                  href="https://apps.apple.com/us/app/zend-quit-gaming-now/id6756012283"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-tertiary hover:text-focus-green transition-colors"

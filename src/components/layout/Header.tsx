@@ -69,7 +69,7 @@ export default function Header() {
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
             <a
-              href="https://apps.apple.com/app/zend"
+              href="https://apps.apple.com/us/app/zend-quit-gaming-now/id6756012283"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-focus-green to-focus-green-light text-void-black px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg hover:shadow-focus-green/50 transition-all duration-300 hover:scale-105"
@@ -130,7 +130,7 @@ export default function Header() {
                   FAQ
                 </Link>
                 <a
-                  href="https://apps.apple.com/app/zend"
+                  href="https://apps.apple.com/us/app/zend-quit-gaming-now/id6756012283"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
