@@ -101,7 +101,7 @@ export default function Features() {
             >
               <Image
                 src={feature.screenshot}
-                alt={`${feature.title} - Zend App Screenshot`}
+                alt={`${feature.title} feature in Zend gaming addiction recovery app - ${feature.description}`}
                 fill
                 className="object-contain group-hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 768px) 50vw, 33vw"

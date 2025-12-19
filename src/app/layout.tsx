@@ -94,6 +94,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Apple Smart App Banner - iOS users can directly open App Store */}
+        <meta name="apple-itunes-app" content="app-id=6756012283, app-argument=zend://home" />
+        {/* Enhanced SoftwareApplication Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -106,13 +109,49 @@ export default function RootLayout({
               "offers": {
                 "@type": "Offer",
                 "price": "19.99",
-                "priceCurrency": "USD"
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2025-12-31"
               },
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.8",
-                "ratingCount": "1000"
-              }
+                "ratingCount": "1000",
+                "bestRating": "5",
+                "worstRating": "1"
+              },
+              "description": "Zend helps you quit gaming addiction using gamification, Screen Time blocking, and community support. Start your 7-day free trial today.",
+              "screenshot": [
+                "https://zend.now/dashboard.png",
+                "https://zend.now/block.png",
+                "https://zend.now/achievements.png"
+              ],
+              "featureList": [
+                "Screen Time Blocking",
+                "Gamified Recovery System",
+                "Streak Tracking",
+                "Recovery Tools",
+                "Community Support",
+                "Progress Analytics"
+              ],
+              "applicationSubCategory": "Wellness Application",
+              "downloadUrl": "https://apps.apple.com/us/app/zend-quit-gaming-now/id6756012283",
+              "softwareVersion": "1.0"
+            })
+          }}
+        />
+        {/* Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Zend",
+              "url": "https://zend.now",
+              "logo": "https://zend.now/icon.png",
+              "description": "Zend is a gamified recovery app that helps people quit gaming addiction and rebuild their lives.",
+              "sameAs": []
             })
           }}
         />

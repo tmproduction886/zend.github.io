@@ -88,7 +88,7 @@ export default function Hero() {
               <div className="relative aspect-[9/16] rounded-2xl overflow-hidden">
                 <Image
                   src="/dashboard.png"
-                  alt="Zend App Dashboard"
+                  alt="Zend gaming recovery app dashboard showing streak tracking, XP progress, daily check-ins, and gamified recovery features for quitting gaming addiction"
                   fill
                   className="object-contain"
                   priority
