@@ -8,23 +8,10 @@ export function getPageData(slug: string): ProgrammaticPageData | null {
 }
 
 export function getTemplateComponent(template: TemplateType) {
-  // Dynamic import based on template type
-  switch (template) {
-    case 'problem-solution':
-      return require('@/components/templates/ProblemSolutionTemplate').default
-    case 'feature-focused':
-      return require('@/components/templates/FeatureTemplate').default
-    case 'question-based':
-      return require('@/components/templates/QuestionTemplate').default
-    case 'comparison':
-      return require('@/components/templates/ComparisonTemplate').default
-    case 'demographic-specific':
-      return require('@/components/templates/DemographicTemplate').default
-    case 'symptom-outcome':
-      return require('@/components/templates/SymptomTemplate').default
-    default:
-      return require('@/components/templates/ProblemSolutionTemplate').default
-  }
+  // For now, all pages use ProblemSolutionTemplate
+  // In the future, we can add other template types
+  // TODO: Create FeatureTemplate, QuestionTemplate, ComparisonTemplate, etc.
+  return require('@/components/templates/ProblemSolutionTemplate').default
 }
 
 export function generateMetadata(pageData: ProgrammaticPageData) {
