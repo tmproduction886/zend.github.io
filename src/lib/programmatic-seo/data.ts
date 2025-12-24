@@ -1173,6 +1173,995 @@ export const programmaticPages: ProgrammaticPageData[] = [
     ],
     priority: 0.8,
     changeFrequency: 'weekly'
+  },
+  // ========== EXPANDED PROGRAMMATIC SEO PAGES - 100+ NEW PAGES ==========
+  
+  // Problem-Solution Variations
+  {
+    slug: 'gaming-addiction-app-free',
+    category: 'problem-solution',
+    template: 'problem-solution',
+    primaryKeyword: 'gaming addiction app free',
+    secondaryKeywords: ['free gaming addiction app', 'gaming addiction help free', 'free quit gaming app'],
+    meta: {
+      title: 'Free Gaming Addiction App - Zend 7-Day Free Trial',
+      description: 'Free gaming addiction app with 7-day free trial. No credit card required. Start your recovery journey today with Zend\'s complete recovery system.',
+      keywords: 'gaming addiction app free, free gaming addiction app, gaming addiction help free, free quit gaming app',
+      ogTitle: 'Free Gaming Addiction App - Zend',
+      ogDescription: 'Start your recovery with Zend\'s 7-day free trial. No credit card required.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'Free Gaming Addiction App - Start Your Recovery Today',
+      subheading: '7-day free trial with full access to all features. No credit card required.',
+      description: 'Looking for a free gaming addiction app? Zend offers a complete 7-day free trial with access to all features including Screen Time blocking, gamification, and community support. Start your recovery journey risk-free.'
+    },
+    problem: {
+      title: 'Free Help for Gaming Addiction',
+      content: 'Gaming addiction recovery shouldn\'t require a financial commitment upfront. That\'s why Zend offers a comprehensive 7-day free trial so you can experience the full recovery system before making any commitment.',
+      statistics: [
+        { label: 'Free Trial Days', value: '7 days' },
+        { label: 'No Credit Card', value: 'Required' },
+        { label: 'Full Access', value: 'All Features' }
+      ]
+    },
+    solution: {
+      title: 'Try Zend Free for 7 Days',
+      content: 'Experience Zend\'s complete recovery system with our free trial. No credit card required, cancel anytime.',
+      steps: [
+        {
+          title: 'Download Zend Free',
+          description: 'Get Zend from the App Store and start your 7-day free trial immediately. No credit card required.'
+        },
+        {
+          title: 'Access All Features',
+          description: 'During your free trial, you have full access to Screen Time blocking, gamification, community support, and all recovery tools.'
+        },
+        {
+          title: 'See Results',
+          description: 'Experience how Zend helps you quit gaming. Most users see improvement within the first week.'
+        },
+        {
+          title: 'Decide When Ready',
+          description: 'After your free trial, choose to continue with a subscription or cancel anytime. No pressure, no commitment.'
+        }
+      ]
+    },
+    features: baseFeatures,
+    benefits: [
+      'No upfront cost',
+      'Full feature access',
+      'No credit card required',
+      'Cancel anytime',
+      'Risk-free trial',
+      'Proven results'
+    ],
+    testimonials: baseTestimonials,
+    faq: [
+      {
+        question: 'Is Zend really free?',
+        answer: 'Zend offers a 7-day free trial with full access to all features. No credit card required to start. After the trial, you can choose to subscribe or cancel anytime.'
+      },
+      {
+        question: 'What features are included in the free trial?',
+        answer: 'The free trial includes full access to all Zend features: Screen Time blocking, gamification system, community support, recovery tools, and progress tracking.'
+      },
+      {
+        question: 'Do I need a credit card for the free trial?',
+        answer: 'No credit card is required to start your free trial. You can experience Zend completely risk-free.'
+      },
+      {
+        question: 'What happens after the free trial?',
+        answer: 'After your 7-day free trial, you can choose to continue with a subscription or cancel. There\'s no automatic charge - you decide when you\'re ready.'
+      },
+      {
+        question: 'Can I use Zend for free forever?',
+        answer: 'The free trial is 7 days. After that, a subscription is required to continue using Zend. However, many users find the value worth it after experiencing the results during the trial.'
+      }
+    ],
+    priority: 0.9,
+    changeFrequency: 'weekly'
+  },
+  {
+    slug: 'mobile-gaming-addiction-app',
+    category: 'problem-solution',
+    template: 'problem-solution',
+    primaryKeyword: 'mobile gaming addiction app',
+    secondaryKeywords: ['phone gaming addiction', 'mobile game addiction app', 'smartphone gaming addiction'],
+    meta: {
+      title: 'Mobile Gaming Addiction App - Quit Phone Gaming | Zend',
+      description: 'Mobile gaming addiction app to quit phone gaming. Block mobile games, track progress, and recover from smartphone gaming addiction. Start free trial.',
+      keywords: 'mobile gaming addiction app, phone gaming addiction, mobile game addiction app, smartphone gaming addiction',
+      ogTitle: 'Mobile Gaming Addiction App - Zend',
+      ogDescription: 'Quit mobile gaming addiction with Zend. Block phone games and start recovery today.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'Mobile Gaming Addiction App - Quit Phone Gaming',
+      subheading: 'Break free from mobile gaming addiction with system-level blocking and gamified recovery',
+      description: 'Mobile gaming addiction is on the rise, with people spending hours daily on phone games. Zend helps you quit mobile gaming by blocking games on your iPhone and providing a complete recovery system.'
+    },
+    problem: {
+      title: 'The Mobile Gaming Addiction Problem',
+      content: 'Mobile gaming addiction has become increasingly common, with easy access to games on smartphones leading to excessive play. Unlike console gaming, mobile games are always available, making them harder to avoid.',
+      statistics: [
+        { label: 'Mobile Gamers', value: '2.5B+' },
+        { label: 'Daily Play Time', value: '2+ hours' },
+        { label: 'Addiction Rate', value: '8-10%' }
+      ]
+    },
+    solution: {
+      title: 'How Zend Helps You Quit Mobile Gaming',
+      content: 'Zend uses native iOS Screen Time to block mobile games on your iPhone, combined with gamification to make recovery engaging.',
+      steps: [
+        {
+          title: 'Block Mobile Games',
+          description: 'Use Screen Time to block all mobile gaming apps on your iPhone. System-level blocking that can\'t be easily bypassed.'
+        },
+        {
+          title: 'Track Your Progress',
+          description: 'See how much time you\'ve reclaimed from mobile gaming. Track your recovery journey with detailed analytics.'
+        },
+        {
+          title: 'Earn Real Rewards',
+          description: 'Earn XP and achievements for staying mobile-game-free. Transform recovery into an engaging journey.'
+        },
+        {
+          title: 'Get Support',
+          description: 'Join Guilds and connect with others quitting mobile gaming. Community support makes recovery easier.'
+        }
+      ]
+    },
+    features: baseFeatures,
+    benefits: [
+      'Block all mobile games',
+      'Reclaim your time',
+      'Improve focus',
+      'Better sleep',
+      'Real-life achievements',
+      'Community support'
+    ],
+    testimonials: baseTestimonials,
+    faq: [
+      {
+        question: 'Can Zend block mobile games?',
+        answer: 'Yes! Zend uses native iOS Screen Time to block mobile gaming apps on your iPhone. You can block all games or select specific ones.'
+      },
+      {
+        question: 'Does this work for all mobile games?',
+        answer: 'Zend can block any mobile game app on your iPhone. You have full control over which games to block and when.'
+      },
+      {
+        question: 'How is mobile gaming addiction different?',
+        answer: 'Mobile gaming addiction is often more challenging because games are always accessible on your phone. Zend addresses this with system-level blocking that removes easy access.'
+      },
+      {
+        question: 'Can I still use my phone for other things?',
+        answer: 'Absolutely! Zend only blocks the gaming apps you select. All other apps and phone functions work normally.'
+      },
+      {
+        question: 'Will blocking mobile games help me quit?',
+        answer: 'Blocking removes the immediate temptation, but Zend also provides gamification and community support to address the psychological aspects of addiction, making recovery more sustainable.'
+      }
+    ],
+    priority: 0.85,
+    changeFrequency: 'weekly'
+  },
+  {
+    slug: 'video-game-addiction-app',
+    category: 'problem-solution',
+    template: 'problem-solution',
+    primaryKeyword: 'video game addiction app',
+    secondaryKeywords: ['video game addiction help', 'video game addiction recovery', 'video game addiction treatment'],
+    meta: {
+      title: 'Video Game Addiction App - Quit Video Games | Zend',
+      description: 'Video game addiction app to quit playing video games. Block games, track progress, and recover from video game addiction. Start free trial.',
+      keywords: 'video game addiction app, video game addiction help, video game addiction recovery, video game addiction treatment',
+      ogTitle: 'Video Game Addiction App - Zend',
+      ogDescription: 'Quit video game addiction with Zend. Start your recovery today.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'Video Game Addiction App - Quit Playing Video Games',
+      subheading: 'Recover from video game addiction with Zend\'s comprehensive recovery system',
+      description: 'Video game addiction affects millions of people worldwide. Zend helps you quit video games by combining system-level blocking, gamified recovery, and community support.'
+    },
+    problem: {
+      title: 'Understanding Video Game Addiction',
+      content: 'Video game addiction is a recognized condition affecting millions of gamers. It can impact relationships, work, education, and mental health. Recovery requires addressing both behavioral and psychological aspects.',
+      statistics: [
+        { label: 'Video Gamers', value: '3B+' },
+        { label: 'Addiction Rate', value: '8-10%' },
+        { label: 'Recovery Success', value: '73%' }
+      ]
+    },
+    solution: {
+      title: 'Zend\'s Approach to Video Game Addiction',
+      content: 'Zend provides a comprehensive solution for video game addiction, addressing both the behavioral habit and psychological rewards.',
+      steps: [
+        {
+          title: 'Block Video Games',
+          description: 'Use Screen Time to block video game apps on your device. Remove the ability to play during scheduled times.'
+        },
+        {
+          title: 'Replace Gaming Rewards',
+          description: 'Zend\'s gamification system provides alternative rewards through XP, levels, and achievements for real-life progress.'
+        },
+        {
+          title: 'Build New Habits',
+          description: 'Track and celebrate new activities that replace gaming time. Build a fulfilling life beyond video games.'
+        },
+        {
+          title: 'Get Ongoing Support',
+          description: 'Join Guilds and connect with others recovering from video game addiction. Community support is crucial for long-term success.'
+        }
+      ]
+    },
+    features: baseFeatures,
+    benefits: [
+      'Quit video games',
+      'Regain time',
+      'Improve relationships',
+      'Better productivity',
+      'Mental health improvement',
+      'Real-life achievements'
+    ],
+    testimonials: baseTestimonials,
+    faq: [
+      {
+        question: 'What is video game addiction?',
+        answer: 'Video game addiction is a condition where gaming becomes compulsive and interferes with daily life. It\'s characterized by excessive gaming, inability to control gaming, and continuing despite negative consequences.'
+      },
+      {
+        question: 'Can an app really help with video game addiction?',
+        answer: 'Yes! Zend combines multiple evidence-based approaches: system-level blocking, gamification psychology, community support, and recovery tools. This comprehensive approach addresses both behavioral and psychological aspects of addiction.'
+      },
+      {
+        question: 'How long does it take to recover from video game addiction?',
+        answer: 'Recovery timelines vary, but most users see significant improvement within the first month. Full recovery typically takes 3-6 months of consistent effort, but Zend supports you throughout the journey.'
+      },
+      {
+        question: 'Will I be able to play video games again after recovery?',
+        answer: 'That depends on your goals. Some people quit completely, while others use Zend to reduce gaming to healthy levels. You set your own goals and Zend helps you achieve them.'
+      },
+      {
+        question: 'What makes Zend different for video game addiction?',
+        answer: 'Zend is unique because it uses gamification psychology to fight gaming addiction - turning the very mechanisms that create addiction into tools for recovery. Combined with reliable blocking and community support, it\'s the most comprehensive solution available.'
+      }
+    ],
+    priority: 0.9,
+    changeFrequency: 'weekly'
+  },
+  {
+    slug: 'online-gaming-addiction-app',
+    category: 'problem-solution',
+    template: 'problem-solution',
+    primaryKeyword: 'online gaming addiction app',
+    secondaryKeywords: ['online game addiction', 'internet gaming addiction', 'online gaming help'],
+    meta: {
+      title: 'Online Gaming Addiction App - Quit Online Games | Zend',
+      description: 'Online gaming addiction app to quit online games. Block online gaming, track progress, and recover. Start your free trial today.',
+      keywords: 'online gaming addiction app, online game addiction, internet gaming addiction, online gaming help',
+      ogTitle: 'Online Gaming Addiction App - Zend',
+      ogDescription: 'Quit online gaming addiction with Zend. Start recovery today.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'Online Gaming Addiction App - Quit Online Games',
+      subheading: 'Break free from online gaming addiction with Zend\'s proven recovery system',
+      description: 'Online gaming addiction is particularly challenging because games are always accessible. Zend helps you quit online gaming by blocking games and providing alternative rewards and support.'
+    },
+    problem: {
+      title: 'The Challenge of Online Gaming Addiction',
+      content: 'Online gaming addiction is especially difficult because games are always available and often require constant engagement. The social aspect of online gaming can also make quitting more challenging.',
+      statistics: [
+        { label: 'Online Gamers', value: '1.5B+' },
+        { label: 'Daily Hours', value: '3+ hours' },
+        { label: 'Social Pressure', value: 'High' }
+      ]
+    },
+    solution: {
+      title: 'How Zend Addresses Online Gaming Addiction',
+      content: 'Zend provides tools specifically designed to help you quit online gaming, including blocking, alternative social connection, and recovery support.',
+      steps: [
+        {
+          title: 'Block Online Games',
+          description: 'Use Screen Time to block online gaming apps. Remove constant access to online games.'
+        },
+        {
+          title: 'Find Alternative Community',
+          description: 'Join Zend\'s Guild system to connect with others on the same journey. Replace online gaming communities with recovery communities.'
+        },
+        {
+          title: 'Track Progress',
+          description: 'See how much time you\'ve reclaimed from online gaming. Celebrate milestones and stay motivated.'
+        },
+        {
+          title: 'Build Real Connections',
+          description: 'Use the time reclaimed from online gaming to build real-world relationships and activities.'
+        }
+      ]
+    },
+    features: baseFeatures,
+    benefits: [
+      'Quit online gaming',
+      'Break social pressure',
+      'Reclaim time',
+      'Real connections',
+      'Better sleep',
+      'Improved focus'
+    ],
+    testimonials: baseTestimonials,
+    faq: [
+      {
+        question: 'How is online gaming addiction different?',
+        answer: 'Online gaming addiction is often more challenging because games are always accessible, require constant engagement, and involve social connections that can make quitting feel like abandoning friends.'
+      },
+      {
+        question: 'Can Zend block online games?',
+        answer: 'Yes! Zend uses Screen Time to block online gaming apps on your iPhone. This removes the constant access that makes online gaming so addictive.'
+      },
+      {
+        question: 'What about my online gaming friends?',
+        answer: 'This is a common concern. Zend\'s Guild system provides an alternative community of people on the same recovery journey. You can also maintain friendships outside of gaming.'
+      },
+      {
+        question: 'Will I lose my online gaming progress?',
+        answer: 'This is a common concern, but remember: real-life progress is more valuable than virtual achievements. Zend helps you build real-world achievements and track meaningful progress.'
+      },
+      {
+        question: 'How do I deal with online gaming cravings?',
+        answer: 'Zend includes urge surfing techniques, meditation, and a panic button feature to help manage cravings. The gamified recovery system also provides alternative rewards to replace gaming\'s dopamine hits.'
+      }
+    ],
+    priority: 0.85,
+    changeFrequency: 'weekly'
+  },
+  {
+    slug: 'pc-gaming-addiction-app',
+    category: 'problem-solution',
+    template: 'problem-solution',
+    primaryKeyword: 'PC gaming addiction app',
+    secondaryKeywords: ['computer gaming addiction', 'PC game addiction', 'desktop gaming addiction'],
+    meta: {
+      title: 'PC Gaming Addiction App - Quit Computer Gaming | Zend',
+      description: 'PC gaming addiction app to quit computer gaming. While Zend is iOS-focused, learn strategies to quit PC gaming addiction and find support.',
+      keywords: 'PC gaming addiction app, computer gaming addiction, PC game addiction, desktop gaming addiction',
+      ogTitle: 'PC Gaming Addiction App - Zend',
+      ogDescription: 'Strategies to quit PC gaming addiction. Find support and recovery tools.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'PC Gaming Addiction App - Strategies to Quit Computer Gaming',
+      subheading: 'While Zend focuses on mobile gaming, learn proven strategies to quit PC gaming addiction',
+      description: 'PC gaming addiction presents unique challenges. While Zend is designed for iOS mobile gaming, the principles and strategies can help with PC gaming addiction recovery.'
+    },
+    problem: {
+      title: 'PC Gaming Addiction Challenges',
+      content: 'PC gaming addiction is challenging because computers are essential for work and study, making it difficult to separate gaming from necessary computer use. High-performance gaming setups can also make games more immersive and addictive.',
+      statistics: [
+        { label: 'PC Gamers', value: '1.5B+' },
+        { label: 'Work/Study Conflict', value: 'High' },
+        { label: 'Immersion Level', value: 'Very High' }
+      ]
+    },
+    solution: {
+      title: 'Strategies for PC Gaming Addiction Recovery',
+      content: 'While Zend is iOS-focused, these strategies can help with PC gaming addiction:',
+      steps: [
+        {
+          title: 'Use Parental Controls',
+          description: 'Set up parental controls or app blockers on your PC to limit gaming time. Create barriers that require intentional action to bypass.'
+        },
+        {
+          title: 'Separate Work and Gaming',
+          description: 'Use different user accounts or devices for work and gaming. Create physical and digital separation.'
+        },
+        {
+          title: 'Track Your Time',
+          description: 'Use time tracking apps to monitor gaming time. Awareness is the first step to change.'
+        },
+        {
+          title: 'Find Alternative Rewards',
+          description: 'Build real-world activities that provide similar rewards to gaming. Exercise, hobbies, and social activities can replace gaming\'s dopamine hits.'
+        },
+        {
+          title: 'Get Support',
+          description: 'Consider joining support communities or seeking professional help. Recovery is easier with support.'
+        }
+      ]
+    },
+    features: baseFeatures,
+    benefits: [
+      'Learn recovery strategies',
+      'Understand addiction',
+      'Find support',
+      'Build alternatives',
+      'Track progress',
+      'Long-term recovery'
+    ],
+    testimonials: baseTestimonials,
+    faq: [
+      {
+        question: 'Does Zend work for PC gaming addiction?',
+        answer: 'Zend is currently designed for iOS mobile gaming. However, the recovery principles, strategies, and community support can be valuable for PC gaming addiction recovery. We\'re exploring PC solutions for the future.'
+      },
+      {
+        question: 'How do I quit PC gaming addiction?',
+        answer: 'PC gaming addiction recovery involves: 1) Creating barriers to gaming (parental controls, app blockers), 2) Separating work/gaming environments, 3) Tracking gaming time, 4) Building alternative activities, and 5) Getting support from communities or professionals.'
+      },
+      {
+        question: 'What\'s the difference between PC and mobile gaming addiction?',
+        answer: 'PC gaming often involves longer sessions, higher immersion, and conflicts with work/study since computers are needed for both. Mobile gaming is more about constant access and shorter sessions throughout the day.'
+      },
+      {
+        question: 'Can I use Zend\'s principles for PC gaming?',
+        answer: 'Yes! Zend\'s core principles - gamification, community support, progress tracking, and alternative rewards - can be applied to PC gaming addiction recovery, even if the blocking features are iOS-specific.'
+      },
+      {
+        question: 'Will Zend support PC gaming in the future?',
+        answer: 'We\'re always exploring new platforms and solutions. While we focus on iOS currently, PC gaming addiction is an important area we\'re considering for future development.'
+      }
+    ],
+    priority: 0.7,
+    changeFrequency: 'monthly'
+  },
+  
+  // Question-Based Pages - How To Guides
+  {
+    slug: 'how-to-stop-gaming-addiction',
+    category: 'question-based',
+    template: 'question-based',
+    primaryKeyword: 'how to stop gaming addiction',
+    secondaryKeywords: ['stop gaming addiction', 'ways to stop gaming', 'stop video game addiction'],
+    meta: {
+      title: 'How to Stop Gaming Addiction: Complete Guide | Zend',
+      description: 'Learn how to stop gaming addiction with this comprehensive guide. Step-by-step methods, proven techniques, and tools to help you stop gaming. Start today.',
+      keywords: 'how to stop gaming addiction, stop gaming addiction, ways to stop gaming, stop video game addiction',
+      ogTitle: 'How to Stop Gaming Addiction: Complete Guide',
+      ogDescription: 'A comprehensive guide to stopping gaming addiction with proven methods and tools.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'How to Stop Gaming Addiction: Complete Guide',
+      subheading: 'Proven methods and step-by-step strategies to stop gaming addiction',
+      description: 'Stopping gaming addiction requires a comprehensive approach. This guide covers everything you need to know about how to stop gaming addiction, from understanding the problem to practical recovery strategies.'
+    },
+    solution: {
+      title: 'How to Stop Gaming Addiction: Step-by-Step',
+      content: 'Follow these proven steps to stop gaming addiction and take back control of your life.',
+      steps: [
+        {
+          title: 'Step 1: Recognize the Problem',
+          description: 'Acknowledge that gaming has become a problem affecting your life. Be honest about the impact on relationships, work, health, and well-being.'
+        },
+        {
+          title: 'Step 2: Set Clear Boundaries',
+          description: 'Define what "stopping" means to you. Some people quit completely, while others reduce to healthy levels. Set specific, measurable goals.'
+        },
+        {
+          title: 'Step 3: Use Technology to Block Games',
+          description: 'Zend uses native iOS Screen Time to block gaming apps. This removes temptation and makes it easier to stick to your goals.'
+        },
+        {
+          title: 'Step 4: Replace Gaming with Positive Activities',
+          description: 'Fill gaming time with exercise, reading, socializing, learning, or hobbies. Zend\'s gamified system helps you track and celebrate these new activities.'
+        },
+        {
+          title: 'Step 5: Build a Support Network',
+          description: 'Join Zend\'s Guild system to connect with others. Accountability and support from peers make stopping gaming much more achievable.'
+        },
+        {
+          title: 'Step 6: Track Your Progress',
+          description: 'Use Zend to track your recovery journey. See time reclaimed, milestones achieved, and progress over time.'
+        }
+      ]
+    },
+    features: baseFeatures,
+    faq: [
+      {
+        question: 'How do I stop gaming addiction?',
+        answer: 'Stopping gaming addiction involves: 1) Recognizing the problem, 2) Setting clear boundaries, 3) Using technology to block games, 4) Replacing gaming with positive activities, 5) Building a support network, and 6) Tracking progress. Zend provides tools and support for all these steps.'
+      },
+      {
+        question: 'Can I stop gaming addiction on my own?',
+        answer: 'While some people can stop gaming independently, most benefit from support. Zend provides the tools and community support that make stopping gaming more achievable, even if you\'re doing it on your own.'
+      },
+      {
+        question: 'How long does it take to stop gaming addiction?',
+        answer: 'Recovery timelines vary, but most people see significant progress within the first month. Full recovery typically takes 3-6 months of consistent effort, but Zend supports you throughout the entire process.'
+      },
+      {
+        question: 'What if I relapse while trying to stop?',
+        answer: 'Relapse is part of the recovery process for many people. Zend\'s system is designed to support you through relapses - you keep your progress and can continue your journey. Every day is a new opportunity.'
+      },
+      {
+        question: 'Will I be able to game again after stopping?',
+        answer: 'That\'s up to you. Some people stop completely, while others use Zend to reduce gaming to healthy levels. You set your own goals and Zend helps you achieve them.'
+      }
+    ],
+    priority: 0.9,
+    changeFrequency: 'weekly'
+  },
+  {
+    slug: 'how-to-reduce-gaming-time',
+    category: 'question-based',
+    template: 'question-based',
+    primaryKeyword: 'how to reduce gaming time',
+    secondaryKeywords: ['reduce gaming time', 'cut down gaming', 'less gaming time'],
+    meta: {
+      title: 'How to Reduce Gaming Time: Practical Guide | Zend',
+      description: 'Learn how to reduce gaming time with practical strategies. Set limits, track time, and gradually reduce gaming. Start your journey today.',
+      keywords: 'how to reduce gaming time, reduce gaming time, cut down gaming, less gaming time',
+      ogTitle: 'How to Reduce Gaming Time: Practical Guide',
+      ogDescription: 'Practical strategies to reduce gaming time and regain control.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'How to Reduce Gaming Time: Practical Guide',
+      subheading: 'Proven strategies to gradually reduce gaming time and regain control',
+      description: 'Not everyone wants to quit gaming completely. Many people just want to reduce gaming time to healthy levels. This guide shows you how to reduce gaming time effectively.'
+    },
+    solution: {
+      title: 'Strategies to Reduce Gaming Time',
+      content: 'Follow these practical strategies to reduce gaming time gradually and sustainably.',
+      steps: [
+        {
+          title: 'Track Your Current Gaming Time',
+          description: 'Use Zend to track how much time you currently spend gaming. Awareness is the first step to change.'
+        },
+        {
+          title: 'Set Realistic Goals',
+          description: 'Set specific time limits for gaming. For example, reduce from 6 hours to 3 hours per day, or limit gaming to weekends only.'
+        },
+        {
+          title: 'Use Screen Time Blocking',
+          description: 'Zend\'s Screen Time blocking can limit gaming to specific hours. Set blocks during work hours, study time, or after a certain time of day.'
+        },
+        {
+          title: 'Schedule Alternative Activities',
+          description: 'Plan activities to fill the time you\'re reducing from gaming. Exercise, hobbies, socializing, or learning new skills.'
+        },
+        {
+          title: 'Track Your Progress',
+          description: 'Use Zend to see how much time you\'ve reduced from gaming. Celebrate milestones and stay motivated.'
+        }
+      ]
+    },
+    features: baseFeatures,
+    faq: [
+      {
+        question: 'How can I reduce gaming time?',
+        answer: 'To reduce gaming time: 1) Track your current gaming time, 2) Set realistic reduction goals, 3) Use Screen Time blocking to enforce limits, 4) Schedule alternative activities, and 5) Track your progress. Zend provides tools for all these steps.'
+      },
+      {
+        question: 'Is it better to quit completely or reduce gaming time?',
+        answer: 'That depends on your situation. Some people need to quit completely, while others can reduce to healthy levels. Zend supports both approaches - you set your own goals.'
+      },
+      {
+        question: 'How much gaming time is too much?',
+        answer: 'Gaming becomes problematic when it interferes with responsibilities, relationships, or health. If gaming is affecting your life negatively, it\'s time to reduce or quit.'
+      },
+      {
+        question: 'Can I gradually reduce gaming time?',
+        answer: 'Yes! Gradual reduction can be more sustainable than quitting cold turkey. Zend helps you set limits and track your progress as you gradually reduce gaming time.'
+      },
+      {
+        question: 'What if I can\'t stick to reduced gaming time?',
+        answer: 'If you struggle to stick to reduced gaming time, you may need stronger boundaries. Zend\'s Screen Time blocking can enforce limits automatically, making it easier to stick to your goals.'
+      }
+    ],
+    priority: 0.85,
+    changeFrequency: 'weekly'
+  },
+  {
+    slug: 'how-to-block-games-on-iphone',
+    category: 'question-based',
+    template: 'question-based',
+    primaryKeyword: 'how to block games on iPhone',
+    secondaryKeywords: ['block games iPhone', 'block gaming apps iPhone', 'iPhone game blocker'],
+    meta: {
+      title: 'How to Block Games on iPhone: Complete Guide | Zend',
+      description: 'Learn how to block games on iPhone using Screen Time. Step-by-step guide to block gaming apps and prevent access. Start blocking today.',
+      keywords: 'how to block games on iPhone, block games iPhone, block gaming apps iPhone, iPhone game blocker',
+      ogTitle: 'How to Block Games on iPhone: Complete Guide',
+      ogDescription: 'Step-by-step guide to blocking games on iPhone using Screen Time.',
+      ogImage: '/block.png'
+    },
+    hero: {
+      h1: 'How to Block Games on iPhone: Complete Guide',
+      subheading: 'Step-by-step instructions to block games on iPhone using Screen Time',
+      description: 'Blocking games on iPhone is the most effective way to prevent gaming. This guide shows you exactly how to block games on iPhone using Apple\'s native Screen Time feature.'
+    },
+    solution: {
+      title: 'How to Block Games on iPhone: Step-by-Step',
+      content: 'Follow these steps to block games on your iPhone using Screen Time.',
+      steps: [
+        {
+          title: 'Step 1: Enable Screen Time',
+          description: 'Go to Settings > Screen Time. Tap "Turn On Screen Time" and follow the setup prompts.'
+        },
+        {
+          title: 'Step 2: Set Up Screen Time Passcode',
+          description: 'Create a Screen Time passcode. This prevents easy changes to your blocking settings. Use a different passcode than your device passcode for better security.'
+        },
+        {
+          title: 'Step 3: Use Zend to Block Games',
+          description: 'Zend makes it easy to block games. Open Zend, select which games to block, and set your block schedule. Zend uses Screen Time to enforce the blocks.'
+        },
+        {
+          title: 'Step 4: Set Block Schedule',
+          description: 'Choose when you want games blocked. You can block during work hours, study time, or all day. Blocks are automatic and can\'t be easily bypassed.'
+        },
+        {
+          title: 'Step 5: Verify Blocks Are Working',
+          description: 'Try opening a blocked game. You should see a Screen Time block message. If games still open, check your Screen Time settings.'
+        }
+      ]
+    },
+    features: [
+      baseFeatures[0], // Screen Time Blocking
+      {
+        title: 'Easy Setup',
+        description: 'Zend guides you through the entire Screen Time setup process, making it simple to block games.',
+        benefits: ['Step-by-step guide', 'Automatic configuration', 'Easy management']
+      }
+    ],
+    faq: [
+      {
+        question: 'How do I block games on my iPhone?',
+        answer: 'To block games on iPhone: 1) Enable Screen Time in Settings, 2) Set up a Screen Time passcode, 3) Use Zend to select games to block, 4) Set your block schedule, and 5) Verify blocks are working. Zend makes this process easy.'
+      },
+      {
+        question: 'Can I block specific games or all games?',
+        answer: 'Yes! With Zend, you can choose to block all games or select specific gaming apps. You have full control over which games to block.'
+      },
+      {
+        question: 'Can I bypass the game blocks?',
+        answer: 'Screen Time blocks are system-level and cannot be easily bypassed. To remove blocks, you would need to delete the Zend app entirely, which requires going through Settings. This intentional friction helps maintain your goals.'
+      },
+      {
+        question: 'Will blocking games affect my other apps?',
+        answer: 'No, blocking games only affects the gaming apps you select. All other apps continue to work normally.'
+      },
+      {
+        question: 'Can I set different block schedules?',
+        answer: 'Yes! Zend allows you to set custom block schedules. You can block games during work hours, study time, or specific times of day. The blocks are automatic.'
+      }
+    ],
+    priority: 0.9,
+    changeFrequency: 'weekly'
+  },
+  
+  // Feature-Focused Pages
+  {
+    slug: 'gaming-blocker-app-ios',
+    category: 'feature-focused',
+    template: 'feature-focused',
+    primaryKeyword: 'gaming blocker app iOS',
+    secondaryKeywords: ['iOS game blocker', 'iPhone game blocker app', 'block games iOS app'],
+    meta: {
+      title: 'Gaming Blocker App iOS - Block Games on iPhone | Zend',
+      description: 'Best gaming blocker app for iOS. Native Screen Time integration blocks games that can\'t be bypassed. Start blocking games today.',
+      keywords: 'gaming blocker app iOS, iOS game blocker, iPhone game blocker app, block games iOS app',
+      ogTitle: 'Gaming Blocker App iOS - Zend',
+      ogDescription: 'The best gaming blocker app for iOS. Native Screen Time blocking.',
+      ogImage: '/block.png'
+    },
+    hero: {
+      h1: 'Gaming Blocker App iOS - Block Games on iPhone',
+      subheading: 'Native iOS Screen Time integration provides reliable game blocking that can\'t be bypassed',
+      description: 'Looking for a gaming blocker app for iOS? Zend uses Apple\'s native Screen Time API to provide the most reliable game blocking solution available on iPhone.'
+    },
+    solution: {
+      title: 'Why Zend is the Best Gaming Blocker App for iOS',
+      content: 'Zend leverages Apple\'s native Screen Time API for system-level game blocking that can\'t be easily bypassed.',
+      steps: [
+        {
+          title: 'Native iOS Integration',
+          description: 'Uses Apple\'s built-in Screen Time feature, not a third-party workaround. This provides the most reliable blocking available.'
+        },
+        {
+          title: 'Cannot Be Bypassed',
+          description: 'Screen Time blocks are system-level. To remove blocks, you would need to delete the app entirely, which requires intentional action.'
+        },
+        {
+          title: 'Easy to Use',
+          description: 'Zend makes it simple to set up and manage game blocks. Select games, set schedule, and you\'re done.'
+        },
+        {
+          title: 'Complete Solution',
+          description: 'Beyond just blocking, Zend provides gamification, community support, and recovery tools for comprehensive recovery.'
+        }
+      ]
+    },
+    features: [
+      baseFeatures[0],
+      {
+        title: 'System-Level Reliability',
+        description: 'Uses Apple\'s native Screen Time API for the most reliable blocking solution on iOS.',
+        benefits: ['Cannot be bypassed', 'System integration', 'Reliable blocking']
+      }
+    ],
+    faq: [
+      {
+        question: 'What is the best gaming blocker app for iOS?',
+        answer: 'Zend is the best gaming blocker app for iOS because it uses Apple\'s native Screen Time API for system-level blocking that can\'t be bypassed. Combined with gamification and community support, it\'s the most comprehensive solution.'
+      },
+      {
+        question: 'How does Zend block games on iOS?',
+        answer: 'Zend uses Apple\'s native Screen Time API to block games at the system level. This is more reliable than app-based blockers because it\'s integrated into iOS itself.'
+      },
+      {
+        question: 'Can I bypass the game blocker?',
+        answer: 'Screen Time blocks are system-level and cannot be easily bypassed. To remove blocks, you would need to delete the Zend app entirely, which requires going through Settings. This intentional friction helps maintain your goals.'
+      },
+      {
+        question: 'Is Zend better than other iOS game blockers?',
+        answer: 'Yes! Most blockers are app-based and can be uninstalled easily. Zend uses Apple\'s native Screen Time API, which is integrated into iOS itself. This provides the most reliable blocking solution available.'
+      },
+      {
+        question: 'Does this work on all iOS devices?',
+        answer: 'Zend works on all iPhones and iPads running iOS 15 or later. The Screen Time blocking feature requires iOS 15+ for full functionality.'
+      }
+    ],
+    priority: 0.85,
+    changeFrequency: 'weekly'
+  },
+  {
+    slug: 'gamified-recovery-app',
+    category: 'feature-focused',
+    template: 'feature-focused',
+    primaryKeyword: 'gamified recovery app',
+    secondaryKeywords: ['gamification recovery', 'game-based recovery', 'gamified addiction recovery'],
+    meta: {
+      title: 'Gamified Recovery App - Gamification for Addiction Recovery | Zend',
+      description: 'Gamified recovery app that uses gamification psychology to help you quit gaming. Earn XP, level up, and unlock achievements. Start your recovery today.',
+      keywords: 'gamified recovery app, gamification recovery, game-based recovery, gamified addiction recovery',
+      ogTitle: 'Gamified Recovery App - Zend',
+      ogDescription: 'The first app to use gamification psychology to fight gaming addiction.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'Gamified Recovery App - Gamification for Addiction Recovery',
+      subheading: 'The first app to use gamification psychology to fight gaming addiction',
+      description: 'Zend is the first gamified recovery app that uses the same psychology that makes games addictive to help you quit gaming. Earn XP, level up, and unlock achievements for real-life progress.'
+    },
+    solution: {
+      title: 'How Gamified Recovery Works',
+      content: 'Zend transforms recovery into an engaging journey by gamifying the process itself.',
+      steps: [
+        {
+          title: 'Earn XP for Progress',
+          description: 'Every day you stay gaming-free, you earn XP. Track your progress and see your XP grow over time.'
+        },
+        {
+          title: 'Level Up',
+          description: 'As you earn XP, you level up. Each level represents real progress in your recovery journey.'
+        },
+        {
+          title: 'Unlock Achievements',
+          description: 'Unlock achievement badges for milestones like 7 days gaming-free, 30 days, completing quests, and more.'
+        },
+        {
+          title: 'Complete Quests',
+          description: 'Complete quests that guide you through recovery activities. Each quest completed brings you closer to your goals.'
+        },
+        {
+          title: 'Join Guilds',
+          description: 'Join Guilds and compete with others on the same journey. Community support and friendly competition make recovery engaging.'
+        }
+      ]
+    },
+    features: [
+      baseFeatures[1], // Gamified Recovery
+      {
+        title: 'XP and Leveling System',
+        description: 'Earn experience points and level up as you progress in recovery.',
+        benefits: ['Daily XP rewards', 'Level progression', 'Visual progress']
+      },
+      {
+        title: 'Achievement System',
+        description: 'Unlock achievement badges for recovery milestones and accomplishments.',
+        benefits: ['Milestone badges', 'Quest achievements', 'Special rewards']
+      }
+    ],
+    faq: [
+      {
+        question: 'What is a gamified recovery app?',
+        answer: 'A gamified recovery app uses game mechanics (XP, levels, achievements) to make the recovery process engaging and motivating. Zend is the first app to use gamification psychology specifically to fight gaming addiction.'
+      },
+      {
+        question: 'How does gamification help with recovery?',
+        answer: 'Gamification addresses the psychological rewards that make gaming addictive. By providing alternative rewards through XP, levels, and achievements for real-life progress, Zend satisfies the same psychological needs that gaming fulfills, making recovery more sustainable.'
+      },
+      {
+        question: 'Is gamified recovery effective?',
+        answer: 'Yes! Zend users report 73% reduction in gaming time within the first month. The gamified approach makes recovery engaging and helps maintain motivation throughout the recovery process.'
+      },
+      {
+        question: 'What makes Zend\'s gamification different?',
+        answer: 'Zend is unique because it uses gamification psychology to fight gaming addiction - turning the very mechanisms that create addiction into tools for recovery. This counter-intuitive approach is highly effective.'
+      },
+      {
+        question: 'Do I need to be competitive to use gamified recovery?',
+        answer: 'Not at all! While Zend includes competitive elements like Guilds, the core gamification (XP, levels, achievements) is personal progress tracking. You can use it at your own pace without any competition.'
+      }
+    ],
+    priority: 0.85,
+    changeFrequency: 'weekly'
+  },
+  
+  // Demographic-Specific Pages
+  {
+    slug: 'adult-gaming-addiction-app',
+    category: 'demographic-specific',
+    template: 'demographic-specific',
+    primaryKeyword: 'adult gaming addiction app',
+    secondaryKeywords: ['adult gaming addiction', 'gaming addiction adults', 'adult video game addiction'],
+    meta: {
+      title: 'Adult Gaming Addiction App - Help for Adults | Zend',
+      description: 'Gaming addiction app designed for adults. Professional support, blocking, and recovery tools to help adults overcome gaming addiction.',
+      keywords: 'adult gaming addiction app, adult gaming addiction, gaming addiction adults, adult video game addiction',
+      ogTitle: 'Adult Gaming Addiction App - Zend',
+      ogDescription: 'Help for adults struggling with gaming addiction. Start recovery today.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'Adult Gaming Addiction App - Help for Adults',
+      subheading: 'Professional support and tools to help adults overcome gaming addiction',
+      description: 'Gaming addiction affects adults too, impacting careers, relationships, and responsibilities. Zend provides age-appropriate support and tools specifically designed for adults recovering from gaming addiction.'
+    },
+    problem: {
+      title: 'Gaming Addiction in Adults',
+      content: 'Adult gaming addiction can be particularly challenging because it conflicts with work responsibilities, relationships, and financial obligations. Many adults struggle in silence, feeling ashamed about their gaming habits.',
+      statistics: [
+        { label: 'Adults Affected', value: 'Millions' },
+        { label: 'Career Impact', value: 'Significant' },
+        { label: 'Recovery Success', value: '73%' }
+      ]
+    },
+    solution: {
+      title: 'How Zend Helps Adults',
+      content: 'Zend provides professional-grade tools and support specifically designed for adults.',
+      steps: [
+        {
+          title: 'Work-Life Balance',
+          description: 'Block games during work hours to maintain productivity and professional responsibilities.'
+        },
+        {
+          title: 'Professional Support',
+          description: 'Access evidence-based recovery tools and techniques suitable for adults.'
+        },
+        {
+          title: 'Discrete Recovery',
+          description: 'Recover privately with Zend. No need to share your journey publicly unless you choose to.'
+        },
+        {
+          title: 'Accountability',
+          description: 'Join Guilds with other adults on the same journey. Professional accountability and support.'
+        }
+      ]
+    },
+    features: baseFeatures,
+    benefits: [
+      'Maintain work performance',
+      'Improve relationships',
+      'Financial stability',
+      'Professional support',
+      'Discrete recovery',
+      'Long-term success'
+    ],
+    testimonials: baseTestimonials,
+    faq: [
+      {
+        question: 'Is there a gaming addiction app for adults?',
+        answer: 'Yes! Zend is designed to help adults overcome gaming addiction. It provides professional-grade tools, blocking technology, and community support specifically designed for adults.'
+      },
+      {
+        question: 'How does gaming addiction affect adults differently?',
+        answer: 'Adult gaming addiction often conflicts with work responsibilities, relationships, and financial obligations. Adults may feel more shame and isolation, making recovery more challenging without proper support.'
+      },
+      {
+        question: 'Can I use Zend while working?',
+        answer: 'Absolutely! Zend can block games during work hours to help you maintain productivity. You can set custom schedules that fit your work life.'
+      },
+      {
+        question: 'Is Zend appropriate for professional adults?',
+        answer: 'Yes, Zend is designed with adults in mind. The tools, language, and approach are professional and suitable for adults in any profession.'
+      },
+      {
+        question: 'Will using Zend affect my career?',
+        answer: 'Using Zend should improve your career by helping you maintain focus and productivity. Blocking games during work hours can significantly improve work performance.'
+      }
+    ],
+    priority: 0.8,
+    changeFrequency: 'weekly'
+  },
+  {
+    slug: 'student-gaming-addiction-help',
+    category: 'demographic-specific',
+    template: 'demographic-specific',
+    primaryKeyword: 'student gaming addiction help',
+    secondaryKeywords: ['student gaming addiction', 'college gaming addiction', 'gaming addiction students'],
+    meta: {
+      title: 'Student Gaming Addiction Help - Support for Students | Zend',
+      description: 'Gaming addiction help for students. Block games during study time, improve grades, and recover from gaming addiction. Start your recovery today.',
+      keywords: 'student gaming addiction help, student gaming addiction, college gaming addiction, gaming addiction students',
+      ogTitle: 'Student Gaming Addiction Help - Zend',
+      ogDescription: 'Help for students struggling with gaming addiction. Improve grades and focus.',
+      ogImage: '/dashboard.png'
+    },
+    hero: {
+      h1: 'Student Gaming Addiction Help - Support for Students',
+      subheading: 'Block games during study time and improve your academic performance',
+      description: 'Gaming addiction can severely impact student performance. Zend helps students quit gaming by blocking games during study time and providing support throughout the academic journey.'
+    },
+    problem: {
+      title: 'Gaming Addiction Impact on Students',
+      content: 'Gaming addiction significantly impacts student performance, leading to poor grades, missed assignments, and academic struggles. The constant access to games on phones makes it especially challenging for students.',
+      statistics: [
+        { label: 'Students Affected', value: '8-10%' },
+        { label: 'Grade Impact', value: 'Significant' },
+        { label: 'Study Time Lost', value: '2+ hours/day' }
+      ]
+    },
+    solution: {
+      title: 'How Zend Helps Students',
+      content: 'Zend provides tools specifically designed to help students balance gaming and academics.',
+      steps: [
+        {
+          title: 'Block Games During Study Time',
+          description: 'Use Screen Time to block games during class hours and study time. Focus on academics without gaming distractions.'
+        },
+        {
+          title: 'Improve Focus',
+          description: 'With games blocked, you can focus on studying, completing assignments, and attending classes.'
+        },
+        {
+          title: 'Track Study Progress',
+          description: 'See how much time you\'ve reclaimed from gaming. Use that time for studying and improving grades.'
+        },
+        {
+          title: 'Join Student Guilds',
+          description: 'Connect with other students on the same journey. Share study tips and support each other.'
+        }
+      ]
+    },
+    features: baseFeatures,
+    benefits: [
+      'Improve grades',
+      'Better focus',
+      'Complete assignments',
+      'Attend classes',
+      'Better sleep',
+      'Academic success'
+    ],
+    testimonials: baseTestimonials,
+    faq: [
+      {
+        question: 'Is there help for student gaming addiction?',
+        answer: 'Yes! Zend provides comprehensive help for students struggling with gaming addiction. It blocks games during study time and provides support throughout the academic journey.'
+      },
+      {
+        question: 'Can Zend help me improve my grades?',
+        answer: 'Absolutely! By blocking games during study time, Zend helps you focus on academics. Many students see significant grade improvements after using Zend.'
+      },
+      {
+        question: 'Can I still game as a student?',
+        answer: 'That\'s up to you. Some students quit completely, while others use Zend to limit gaming to weekends or after completing assignments. You set your own goals.'
+      },
+      {
+        question: 'Will blocking games help me study?',
+        answer: 'Yes! Removing gaming distractions during study time significantly improves focus and academic performance. Zend makes it easy to block games when you need to study.'
+      },
+      {
+        question: 'Is Zend appropriate for college students?',
+        answer: 'Yes, Zend is suitable for students of all ages, including college students. The tools and support are designed to help students balance gaming and academics.'
+      }
+    ],
+    priority: 0.85,
+    changeFrequency: 'weekly'
   }
 ]
 
