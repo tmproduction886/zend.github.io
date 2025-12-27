@@ -1,4 +1,6 @@
 import { ProgrammaticPageData } from './types'
+// Import generated 5000 pages
+import { allGeneratedPages } from './pages/generated-5000-pages'
 
 // Base content that can be reused across pages
 const baseFeatures = [
@@ -52,8 +54,8 @@ const baseTestimonials = [
   }
 ]
 
-// First batch of programmatic pages
-export const programmaticPages: ProgrammaticPageData[] = [
+// First batch of programmatic pages (existing manually created pages)
+const existingProgrammaticPages: ProgrammaticPageData[] = [
   {
     slug: 'quit-gaming-addiction-app',
     category: 'problem-solution',
@@ -2165,14 +2167,25 @@ export const programmaticPages: ProgrammaticPageData[] = [
   }
 ]
 
+// Combine existing pages with generated 1000 pages
+// Note: If there are duplicate slugs, existing pages take precedence
+const existingPageSlugs = new Set(existingProgrammaticPages.map(p => p.slug))
+const uniqueGeneratedPages = allGeneratedPages.filter(p => !existingPageSlugs.has(p.slug))
+
+// Export all pages (existing + generated, totaling 1000+ pages)
+export const allProgrammaticPages: ProgrammaticPageData[] = [
+  ...existingProgrammaticPages,
+  ...uniqueGeneratedPages
+]
+
 // Helper function to get page by slug
 export function getPageBySlug(slug: string): ProgrammaticPageData | undefined {
-  return programmaticPages.find(page => page.slug === slug)
+  return allProgrammaticPages.find(page => page.slug === slug)
 }
 
 // Get all page slugs for static generation
 export function getAllPageSlugs(): Array<{ slug: string; category?: string }> {
-  return programmaticPages.map(page => ({
+  return allProgrammaticPages.map(page => ({
     slug: page.slug,
     category: page.category
   }))
@@ -2180,6 +2193,9 @@ export function getAllPageSlugs(): Array<{ slug: string; category?: string }> {
 
 // Get all pages for sitemap
 export function getAllPages(): ProgrammaticPageData[] {
-  return programmaticPages
+  return allProgrammaticPages
 }
+
+// Legacy export for backward compatibility
+export const programmaticPages = allProgrammaticPages
 

@@ -27,7 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
   
-  // Programmatic pages
+  // Programmatic pages (5000 pages)
+  // Single sitemap is still optimal: ~5,003 URLs (10% of 50,000 limit), ~900KB (1.8% of 50MB limit)
+  // No need for sitemap index until we exceed 10,000 pages or 10MB
   const programmaticPages = getAllPages()
   const dynamicPages: MetadataRoute.Sitemap = programmaticPages.map((page) => ({
     url: `${baseUrl}/${page.slug}`,
@@ -38,4 +40,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
   
   return [...staticPages, ...dynamicPages]
 }
-
