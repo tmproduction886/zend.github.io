@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon' },
       { url: '/favicon.png', type: 'image/png', sizes: '48x48' },
+      { url: '/icon.png', type: 'image/png', sizes: '512x512' }, // App icon for search results
     ],
     shortcut: ['/favicon.ico', '/favicon.png'],
     apple: [{ url: '/icon.png', sizes: '180x180', type: 'image/png' }],
@@ -136,7 +137,9 @@ export default function RootLayout({
               ],
               "applicationSubCategory": "Wellness Application",
               "downloadUrl": "https://apps.apple.com/us/app/zend-quit-gaming-now/id6756012283",
-              "softwareVersion": "1.0"
+              "softwareVersion": "1.0",
+              "image": "https://zend.now/icon.png",
+              "icon": "https://zend.now/icon.png"
             })
           }}
         />
