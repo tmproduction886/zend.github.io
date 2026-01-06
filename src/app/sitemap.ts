@@ -14,13 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/privacy`,
+      url: `${baseUrl}/privacy/`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/terms`,
+      url: `${baseUrl}/terms/`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.5,
@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // No need for sitemap index until we exceed 10,000 pages or 10MB
   const programmaticPages = getAllPages()
   const dynamicPages: MetadataRoute.Sitemap = programmaticPages.map((page) => ({
-    url: `${baseUrl}/${page.slug}`,
+    url: `${baseUrl}/${page.slug}/`,
     lastModified: currentDate,
     changeFrequency: page.changeFrequency || 'weekly',
     priority: page.priority || 0.7,

@@ -7,6 +7,7 @@ import Gamification from '@/components/sections/Gamification'
 import Benefits from '@/components/sections/Benefits'
 import Testimonials from '@/components/sections/Testimonials'
 import Community from '@/components/sections/Community'
+import ProgrammaticPages from '@/components/sections/ProgrammaticPages'
 import FAQ from '@/components/sections/FAQ'
 import FinalCTA from '@/components/sections/FinalCTA'
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Benefits />
       <Testimonials />
       <Community />
+      <ProgrammaticPages />
       <FAQ />
       <FinalCTA />
     </>

@@ -49,7 +49,56 @@ export const baseTestimonials: TestimonialData[] = [
     quote: 'The community support in Zend kept me accountable. Knowing others were on the same journey made all the difference.',
     author: 'Sam T.',
     role: 'Professional'
+  },
+  {
+    quote: 'After 3 years of trying to quit gaming, Zend finally gave me the tools I needed. The XP system made staying motivated so much easier.',
+    author: 'Morgan R.',
+    role: 'Software Developer'
+  },
+  {
+    quote: 'I was skeptical about gamification, but Zend proved me wrong. Earning XP for real-life progress was exactly what I needed.',
+    author: 'Casey L.',
+    role: 'College Student'
+  },
+  {
+    quote: 'The Guild feature in Zend connected me with people who understood my struggle. That support network was invaluable.',
+    author: 'Taylor D.',
+    role: 'Teacher'
+  },
+  {
+    quote: 'Zend\'s Screen Time integration is brilliant. It blocks games at the system level, so I can\'t just uninstall the blocker.',
+    author: 'Riley P.',
+    role: 'Marketing Professional'
+  },
+  {
+    quote: 'What I love about Zend is that it doesn\'t just block games - it helps me build better habits and track my progress.',
+    author: 'Jamie W.',
+    role: 'Entrepreneur'
+  },
+  {
+    quote: 'The meditation and urge surfing tools in Zend helped me manage cravings. It\'s more than just a blocker - it\'s a complete recovery system.',
+    author: 'Avery S.',
+    role: 'Graduate Student'
+  },
+  {
+    quote: 'I\'ve been gaming-free for 6 months thanks to Zend. The streak tracking and achievements kept me motivated every single day.',
+    author: 'Quinn M.',
+    role: 'Designer'
+  },
+  {
+    quote: 'Zend showed me that recovery doesn\'t have to be miserable. The gamification made it actually enjoyable to work on myself.',
+    author: 'Sage B.',
+    role: 'Consultant'
+  },
+  {
+    quote: 'As a parent, I appreciate how Zend helps my teen manage their gaming. The privacy controls and progress tracking give me peace of mind.',
+    author: 'Drew H.',
+    role: 'Parent'
   }
 ]
+
+
+
+
 
 

@@ -14,24 +14,48 @@ export function getTemplateComponent(template: TemplateType) {
   return require('@/components/templates/ProblemSolutionTemplate').default
 }
 
+// Optimize title length (50-60 characters for best SEO)
+function optimizeTitle(title: string): string {
+  if (title.length <= 60) return title
+  // Try to cut at a natural break point
+  const cutAt = title.lastIndexOf(' ', 57)
+  return cutAt > 0 ? title.substring(0, cutAt) + '...' : title.substring(0, 57) + '...'
+}
+
+// Optimize description length (150-160 characters for best SEO)
+function optimizeDescription(description: string): string {
+  if (description.length <= 160) return description
+  // Try to cut at a natural break point
+  const cutAt = description.lastIndexOf('.', 157)
+  if (cutAt > 140) return description.substring(0, cutAt + 1)
+  const spaceCut = description.lastIndexOf(' ', 157)
+  return spaceCut > 140 ? description.substring(0, spaceCut) + '...' : description.substring(0, 157) + '...'
+}
+
 export function generateMetadata(pageData: ProgrammaticPageData) {
   const baseUrl = 'https://zend.now'
   
+  // Optimize title and description lengths
+  const optimizedTitle = optimizeTitle(pageData.meta.title)
+  const optimizedDescription = optimizeDescription(pageData.meta.description)
+  const optimizedOgTitle = pageData.meta.ogTitle ? optimizeTitle(pageData.meta.ogTitle) : optimizedTitle
+  const optimizedOgDescription = pageData.meta.ogDescription ? optimizeDescription(pageData.meta.ogDescription) : optimizedDescription
+  
   return {
-    title: pageData.meta.title,
-    description: pageData.meta.description,
+    title: optimizedTitle,
+    description: optimizedDescription,
     keywords: pageData.meta.keywords || pageData.secondaryKeywords.join(', '),
     authors: [{ name: 'Zend' }],
     creator: 'Zend',
     publisher: 'Zend',
     metadataBase: new URL(baseUrl),
     alternates: {
-      canonical: `/${pageData.slug}`,
+      canonical: `${baseUrl}/${pageData.slug}/`,
     },
     openGraph: {
-      title: pageData.meta.ogTitle || pageData.meta.title,
-      description: pageData.meta.ogDescription || pageData.meta.description,
-      url: `${baseUrl}/${pageData.slug}`,
+      title: optimizedOgTitle,
+      description: optimizedOgDescription,
+      url: `${baseUrl}/${pageData.slug}/`,
       siteName: 'Zend',
       type: 'website',
       locale: 'en_US',
@@ -46,8 +70,8 @@ export function generateMetadata(pageData: ProgrammaticPageData) {
     },
     twitter: {
       card: 'summary_large_image' as const,
-      title: pageData.meta.ogTitle || pageData.meta.title,
-      description: pageData.meta.ogDescription || pageData.meta.description,
+      title: optimizedOgTitle,
+      description: optimizedOgDescription,
       images: [pageData.meta.ogImage || '/dashboard.png'],
       creator: '@zend',
     },
@@ -62,6 +86,9 @@ export function generateMetadata(pageData: ProgrammaticPageData) {
         'max-snippet': -1,
       },
     },
+    // Additional SEO metadata
+    category: pageData.category || 'gaming addiction recovery',
+    classification: 'Health & Wellness',
   }
 }
 
@@ -175,7 +202,7 @@ export function generateBreadcrumbSchema(pageData: ProgrammaticPageData) {
         '@type': 'ListItem',
         position: 2,
         name: pageData.hero.h1,
-        item: `${baseUrl}/${pageData.slug}`
+        item: `${baseUrl}/${pageData.slug}/`
       }
     ]
   }
@@ -194,21 +221,86 @@ export function generateArticleSchema(pageData: ProgrammaticPageData) {
     description: pageData.meta.description,
     author: {
       '@type': 'Organization',
-      name: 'Zend'
+      name: 'Zend',
+      url: baseUrl
     },
     publisher: {
       '@type': 'Organization',
       name: 'Zend',
       logo: {
         '@type': 'ImageObject',
-        url: `${baseUrl}/icon.png`
+        url: `${baseUrl}/icon.png`,
+        width: 512,
+        height: 512
       }
     },
     datePublished: new Date().toISOString(),
     dateModified: new Date().toISOString(),
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${baseUrl}/${pageData.slug}`
+      '@id': `${baseUrl}/${pageData.slug}/`
+    },
+    articleSection: 'Gaming Addiction Recovery',
+    keywords: pageData.secondaryKeywords.join(', ')
+  }
+}
+
+// Generate HowTo schema for question-based pages with steps
+export function generateHowToSchema(pageData: ProgrammaticPageData) {
+  if (pageData.template !== 'question-based' || !pageData.solution?.steps) return null
+  
+  const baseUrl = 'https://zend.now'
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: pageData.hero.h1,
+    description: pageData.meta.description,
+    image: `${baseUrl}${pageData.meta.ogImage || '/dashboard.png'}`,
+    totalTime: 'PT30M',
+    estimatedCost: {
+      '@type': 'MonetaryAmount',
+      currency: 'USD',
+      value: '0'
+    },
+    step: pageData.solution.steps.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.title,
+      text: step.description,
+      url: `${baseUrl}/${pageData.slug}/#step-${index + 1}`
+    }))
+  }
+}
+
+// Generate WebPage schema for all pages
+export function generateWebPageSchema(pageData: ProgrammaticPageData) {
+  const baseUrl = 'https://zend.now'
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: pageData.hero.h1,
+    description: pageData.meta.description,
+    url: `${baseUrl}/${pageData.slug}/`,
+    inLanguage: 'en-US',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'Zend',
+      url: baseUrl
+    },
+    about: {
+      '@type': 'Thing',
+      name: pageData.primaryKeyword
+    },
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: `${baseUrl}${pageData.meta.ogImage || '/dashboard.png'}`,
+      width: 1200,
+      height: 630
+    },
+    breadcrumb: {
+      '@id': `${baseUrl}/${pageData.slug}/#breadcrumb`
     }
   }
 }

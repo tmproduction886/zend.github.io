@@ -8,6 +8,8 @@ import {
   generateFAQSchema, 
   generateBreadcrumbSchema,
   generateArticleSchema,
+  generateHowToSchema,
+  generateWebPageSchema,
   getRelatedPages
 } from '@/lib/programmatic-seo/utils'
 import Link from 'next/link'
@@ -23,14 +25,20 @@ export default function ProblemSolutionTemplate({ data }: ProblemSolutionTemplat
   const faqSchema = generateFAQSchema(data)
   const breadcrumbSchema = generateBreadcrumbSchema(data)
   const articleSchema = generateArticleSchema(data)
+  const howToSchema = generateHowToSchema(data)
+  const webPageSchema = generateWebPageSchema(data)
   const relatedPages = getRelatedPages(data.slug, 5)
 
   return (
     <>
-      {/* Structured Data */}
+      {/* Structured Data - Multiple Schemas for Better SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <script
         type="application/ld+json"
@@ -46,9 +54,15 @@ export default function ProblemSolutionTemplate({ data }: ProblemSolutionTemplat
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
       )}
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Hero Section - Semantic HTML for SEO */}
+      <header className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-digital-night via-void-black to-digital-night" />
         <div className="absolute inset-0 bg-mesh-gradient opacity-30" />
         
@@ -103,7 +117,7 @@ export default function ProblemSolutionTemplate({ data }: ProblemSolutionTemplat
             </motion.div>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* Problem Section */}
       {data.problem && (
@@ -178,28 +192,33 @@ export default function ProblemSolutionTemplate({ data }: ProblemSolutionTemplat
               </motion.p>
 
               {data.solution.steps && (
-                <div className="space-y-6">
+                <ol className="space-y-6" itemScope itemType="https://schema.org/HowTo">
                   {data.solution.steps.map((step, index) => (
-                    <motion.div
+                    <motion.li
                       key={index}
+                      id={`step-${index + 1}`}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
                       className="bg-card-bg/50 backdrop-blur-sm border border-white/10 rounded-xl p-6"
+                      itemProp="step"
+                      itemScope
+                      itemType="https://schema.org/HowToStep"
                     >
+                      <meta itemProp="position" content={String(index + 1)} />
                       <div className="flex items-start gap-4">
                         <div className="flex-shrink-0 w-10 h-10 bg-focus-green/20 rounded-full flex items-center justify-center text-focus-green font-bold">
                           {index + 1}
                         </div>
                         <div>
-                          <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                          <p className="text-text-secondary">{step.description}</p>
+                          <h3 className="text-xl font-semibold mb-2" itemProp="name">{step.title}</h3>
+                          <p className="text-text-secondary" itemProp="text">{step.description}</p>
                         </div>
                       </div>
-                    </motion.div>
+                    </motion.li>
                   ))}
-                </div>
+                </ol>
               )}
             </div>
           </div>
@@ -225,16 +244,18 @@ export default function ProblemSolutionTemplate({ data }: ProblemSolutionTemplat
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {data.features.map((feature, index) => (
-                <motion.div
+                <motion.article
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="bg-card-bg/50 backdrop-blur-sm border border-white/10 rounded-xl p-6"
+                  itemScope
+                  itemType="https://schema.org/SoftwareFeature"
                 >
-                  <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                  <p className="text-text-secondary mb-4">{feature.description}</p>
+                  <h3 className="text-xl font-semibold mb-3" itemProp="name">{feature.title}</h3>
+                  <p className="text-text-secondary mb-4" itemProp="description">{feature.description}</p>
                   {feature.benefits && (
                     <ul className="space-y-2">
                       {feature.benefits.map((benefit, i) => (
@@ -247,7 +268,7 @@ export default function ProblemSolutionTemplate({ data }: ProblemSolutionTemplat
                       ))}
                     </ul>
                   )}
-                </motion.div>
+                </motion.article>
               ))}
             </div>
           </div>

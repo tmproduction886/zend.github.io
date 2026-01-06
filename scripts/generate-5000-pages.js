@@ -7,8 +7,9 @@ const fs = require('fs')
 const path = require('path')
 
 const OUTPUT_DIR = path.join(__dirname, '../src/lib/programmatic-seo/pages')
-const GENERATED_PAGES_FILE = path.join(OUTPUT_DIR, 'generated-5000-pages.ts')
+const GENERATED_PAGES_DIR = path.join(OUTPUT_DIR, 'generated')
 const TARGET_PAGES = 5000
+const MAX_FILE_SIZE_MB = 20 // Keep files under 20MB to be safe (GitHub limit is 25MB)
 
 // Import generators (we'll need to compile or use a different approach)
 // For now, let's inline the logic
@@ -591,9 +592,14 @@ for (const combo of combinations) {
   pagesByCategory[combo.category].push(pageData)
 }
 
-// Generate TypeScript file
-let fileContent = `// @ts-nocheck
-// Auto-generated file: ${TARGET_PAGES} programmatic SEO pages
+// Generate TypeScript files - split by category to keep files under 25MB
+// Ensure output directory exists
+if (!fs.existsSync(GENERATED_PAGES_DIR)) {
+  fs.mkdirSync(GENERATED_PAGES_DIR, { recursive: true })
+}
+
+const header = `// @ts-nocheck
+// Auto-generated file - Part of ${TARGET_PAGES} programmatic SEO pages
 // Generated on: ${new Date().toISOString()}
 // DO NOT EDIT MANUALLY - Regenerate using: node scripts/generate-5000-pages.js
 
@@ -601,39 +607,88 @@ import { ProgrammaticPageData } from '../types'
 
 `
 
+// Generate separate file for each category
+const categoryFiles = []
 for (const [category, pages] of Object.entries(pagesByCategory)) {
   const categoryName = category.replace(/-/g, '')
   const exportName = `${categoryName}Pages`
+  const fileName = `generated-${category}.ts`
+  const filePath = path.join(GENERATED_PAGES_DIR, fileName)
   
+  let fileContent = header
   fileContent += `// ${category} pages (${pages.length} pages)\n`
   const pagesJson = JSON.stringify(pages, null, 2)
-  fileContent += `export const ${exportName}: ProgrammaticPageData[] = ${pagesJson}\n\n`
+  fileContent += `export const ${exportName}: ProgrammaticPageData[] = ${pagesJson}\n`
+  
+  // Check file size
+  const fileSizeMB = Buffer.byteLength(fileContent, 'utf8') / (1024 * 1024)
+  
+  // If file is too large, split it into chunks
+  if (fileSizeMB > MAX_FILE_SIZE_MB) {
+    console.log(`⚠️  ${category} file is ${fileSizeMB.toFixed(2)}MB, splitting into chunks...`)
+    const chunkSize = Math.ceil(pages.length / Math.ceil(fileSizeMB / MAX_FILE_SIZE_MB))
+    
+    for (let i = 0; i < pages.length; i += chunkSize) {
+      const chunk = pages.slice(i, i + chunkSize)
+      const chunkNum = Math.floor(i / chunkSize) + 1
+      const chunkFileName = `generated-${category}-part${chunkNum}.ts`
+      const chunkFilePath = path.join(GENERATED_PAGES_DIR, chunkFileName)
+      
+      let chunkContent = header
+      chunkContent += `// ${category} pages - Part ${chunkNum} (${chunk.length} pages)\n`
+      const chunkJson = JSON.stringify(chunk, null, 2)
+      chunkContent += `export const ${exportName}Part${chunkNum}: ProgrammaticPageData[] = ${chunkJson}\n`
+      
+      fs.writeFileSync(chunkFilePath, chunkContent, 'utf-8')
+      categoryFiles.push({ category, fileName: chunkFileName, exportName: `${exportName}Part${chunkNum}`, count: chunk.length })
+    }
+  } else {
+    fs.writeFileSync(filePath, fileContent, 'utf-8')
+    categoryFiles.push({ category, fileName, exportName, count: pages.length })
+  }
 }
 
-fileContent += `// All generated pages combined\n`
-fileContent += `export const allGeneratedPages = [\n`
-for (const [category, pages] of Object.entries(pagesByCategory)) {
-  const categoryName = category.replace(/-/g, '')
-  fileContent += `  ...${categoryName}Pages,\n`
-}
-fileContent += `] as ProgrammaticPageData[]\n`
+// Generate index file that imports all category files
+let indexContent = `// @ts-nocheck
+// Auto-generated index file for ${TARGET_PAGES} programmatic SEO pages
+// Generated on: ${new Date().toISOString()}
+// DO NOT EDIT MANUALLY - Regenerate using: node scripts/generate-5000-pages.js
 
-// Ensure output directory exists
-if (!fs.existsSync(OUTPUT_DIR)) {
-  fs.mkdirSync(OUTPUT_DIR, { recursive: true })
+import { ProgrammaticPageData } from '../types'
+
+`
+
+// Import all category files
+for (const file of categoryFiles) {
+  indexContent += `import { ${file.exportName} } from './generated/${file.fileName.replace('.ts', '')}'\n`
 }
 
-// Write to file
-fs.writeFileSync(GENERATED_PAGES_FILE, fileContent, 'utf-8')
+// Combine all pages
+indexContent += `\n// All generated pages combined\n`
+indexContent += `export const allGeneratedPages: ProgrammaticPageData[] = [\n`
+for (const file of categoryFiles) {
+  indexContent += `  ...${file.exportName},\n`
+}
+indexContent += `]\n`
+
+const indexFilePath = path.join(OUTPUT_DIR, 'generated-5000-pages.ts')
+fs.writeFileSync(indexFilePath, indexContent, 'utf-8')
 
 console.log(`\n✅ Generated ${combinations.length} pages:`)
 for (const [category, pages] of Object.entries(pagesByCategory)) {
   console.log(`   - ${category}: ${pages.length} pages`)
 }
-console.log(`\n📁 Output file: ${GENERATED_PAGES_FILE}`)
+console.log(`\n📁 Output files:`)
+console.log(`   - Index: src/lib/programmatic-seo/pages/generated-5000-pages.ts`)
+console.log(`   - Category files: src/lib/programmatic-seo/pages/generated/`)
+for (const file of categoryFiles) {
+  const filePath = path.join(GENERATED_PAGES_DIR, file.fileName)
+  const fileSizeMB = fs.existsSync(filePath) ? (fs.statSync(filePath).size / (1024 * 1024)).toFixed(2) : '0'
+  console.log(`     - ${file.fileName}: ${fileSizeMB}MB (${file.count} pages)`)
+}
 console.log(`\n⚠️  Next steps:`)
-console.log(`   1. Review the generated file`)
+console.log(`   1. Review the generated files (all under 25MB)`)
 console.log(`   2. Update data.ts to import from generated-5000-pages.ts`)
 console.log(`   3. Run build to verify all pages generate correctly`)
-console.log(`   4. Consider sitemap index for ${TARGET_PAGES} pages`)
+console.log(`   4. Commit and push - GitHub Actions will deploy automatically`)
 
