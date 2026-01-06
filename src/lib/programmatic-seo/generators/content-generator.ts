@@ -214,18 +214,6 @@ const stepVariations = [
   ]
 ]
 
-// Helper function to deterministically select variation based on slug
-// This ensures each page gets a unique combination
-function selectVariation<T>(variations: T[], slug: string, index: number = 0): T {
-  // Use slug hash to deterministically select variation
-  let hash = 0
-  for (let i = 0; i < slug.length; i++) {
-    hash = ((hash << 5) - hash) + slug.charCodeAt(i) + index
-    hash = hash & hash // Convert to 32-bit integer
-  }
-  return variations[Math.abs(hash) % variations.length]
-}
-
 // Generate unique FAQ questions
 function generateFAQ(keyword: string, category: string, demographic?: string, symptom?: string): Array<{ question: string; answer: string }> {
   const baseFAQs = [

@@ -24,11 +24,12 @@ export default function ProgrammaticPages() {
     import('@/lib/programmatic-seo/data').then(({ getAllPages }) => {
       const allPages = getAllPages()
       const sorted = allPages
+        .filter(p => p.category) // Filter out pages without category
         .sort((a, b) => (b.priority || 0.7) - (a.priority || 0.7))
         .slice(0, 24)
         .map(p => ({
           slug: p.slug,
-          category: p.category,
+          category: p.category!,
           priority: p.priority || 0.7,
           hero: p.hero
         }))
